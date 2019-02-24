@@ -1,0 +1,595 @@
+html, body, ul, li, p, div, img, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #777777;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    /*min-height: 500px;*/
+}
+
+body a{
+    text-decoration: none;
+    color: #000000;
+}
+
+/*=============INDEX=============*/
+
+.con-index {
+    padding-top: 80px;
+    max-width: 1140px; 
+    margin: auto;
+}
+
+.header {
+    display: block;
+    width: 800px;
+    height: 120px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 5vh;
+    position: relative;
+    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.header h1{
+    font-size: 1.5em;
+    position: absolute;
+    text-align: center;
+    color: #444444;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 700;
+}
+
+
+#nav {
+    margin: auto;
+    float:right;
+    padding-top: 6px;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: auto;
+}
+
+#nav ul li {
+    font-size: 1em;
+    float: left;
+    padding-left: 24px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: #777777;
+}
+
+#nav ul li a:hover {
+    color: #aaaaaa;
+}
+
+.index-content {
+    clear: both;
+    display: block;
+    margin: auto;
+    width: 800px;
+    height: auto;
+}
+
+.noun {
+    font-size: 0.9em;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    float: left;
+    clear: both;
+    color: #444444;
+}
+
+#footer-index {
+    clear: both;
+    width: 660px;
+    height: 15px;
+    margin: 0;
+    padding-top: 5px;
+    font-size: 0.8em;
+    opacity: 0.7;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+
+
+/*=============PAGES=============*/
+
+.con-page {
+    padding-top: 20px;
+    max-width: 1140px; 
+    margin: auto;
+}
+
+.header-page {
+    display: block;
+    width: 800px;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.header-page h1{
+    font-size: 1.5em;
+    position: absolute;
+    text-align: center;
+    color: #444444;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 700;
+}
+
+
+#footer-page{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100vw;
+    padding: 1px 0;
+    color: #bbbbbb;
+    background-color: #ffffff;
+    font-size: 0.8em;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+.content-page{
+    display: block;
+    width: 800px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    display: none;
+}
+
+/*gallery*/
+
+.grid-gallery{
+    width: 800px;
+    display: inline-grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.g4{
+    grid-template-columns: auto auto auto auto;
+}
+
+.grid-each p{
+    opacity: 0;
+    margin-top: -5px;
+    text-align: center;
+}
+
+.grid-each-show p{
+    opacity: 1;
+    margin-top: -5px;
+    text-align: center;
+} 
+
+.grid-gallery a:hover .grid-each p{
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.grid-gallery a:hover .grid-each-show p{
+    text-decoration: underline;
+}
+
+.grid-img{
+    object-fit: cover;
+    min-width: 150px;
+    width: 100%;
+    height: calc(80vh - 200px);
+    min-height: 100px;
+}
+
+.hi{
+    height: calc(100vh - 200px);
+}
+
+.grid-gallery-min{
+    width: 800px;
+    display: inline-grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+
+.grid-img-min{
+    object-fit: cover;
+    width: 95px;
+    height: 240px;
+}
+
+
+
+
+/*#left-right ul li a {
+    text-decoration: none;
+    color: #777777;
+}
+
+#left-right ul li a:hover {
+    color: #bbbbbb;
+}*/
+
+/*.content-grid{
+    display: inline-grid;
+    position: relative;
+    width: 800px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 300px;
+}
+
+.content-grid-img{
+    height: 100%;
+}*/
+
+.content-text{
+    margin-bottom: 10px;
+}
+
+.content-text h2{
+    font-size: 1.2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #444444;
+    letter-spacing: 2px;
+}
+
+.content-text h3{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #444444;
+    letter-spacing: 2px;
+}
+
+.content-text a:hover{
+    text-decoration: underline;
+}
+
+.content-break{
+    padding-bottom: 30px;
+}
+
+.content-return{
+    margin-bottom: 50px;
+}
+
+.content-return a:hover{
+    text-decoration: underline;
+}
+
+.content-return-left{
+    float: left;
+    position: absolute;
+    margin-left: -7vw;
+}
+
+.content-return-left a:hover{
+    text-decoration: underline;
+}
+
+.content-vid{
+    margin-bottom: 10px;
+}
+
+.img-large{
+    width:100%;
+}
+
+.img-half{
+    width: 49.6%;
+}
+
+.img-third{
+    width: 33%;
+}
+
+.img-medium{
+    height:500px;
+}
+.img-small{
+    height: 330px;
+}
+
+.float-right{
+    float: right;
+    margin-left: 20px;
+}
+.float-left{
+    float: left;
+    margin-right: 20px;
+}
+
+.clear-both{
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.grid-tattoo{
+    width: 100%;
+    display: inline-grid;
+    position: relative;
+    left: -19vw;
+    margin: auto;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.grid-tattoo-img{
+    object-fit: cover;
+    width: 20vw;
+    height: 20vw;
+    cursor: pointer;
+}
+
+.grid-tattoo-img:hover {
+    opacity: 0.75;
+    transition: opacity 0.2s;
+}
+
+/*#left-right {
+    margin: auto;
+    float: right;
+}
+
+#left-right ul {
+    list-style-type: none;
+    margin: auto;
+}
+
+#left-right ul li {
+    font-size: 1em;
+    float: left;
+    padding-left: 24px;
+    color: #000000;
+    text-align: center;
+}
+
+.left, .right {
+    cursor: pointer;
+}*/
+
+
+/*TATTOO GALLERY LIGHTBOX*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #000000;
+  margin: auto;
+  padding: 0;
+  height: calc(100vh - 60px);
+  width: calc(100vh - 60px);
+}
+
+.close {
+    color: #ffffff;
+    opacity: 0.5;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 40px;
+}
+
+.close:hover {
+    opacity: 1;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img{
+    height: calc(100vh - 60px);
+}
+
+.prev, .next {
+    cursor: pointer;
+    top: 0;
+    position: absolute;
+    width: auto;
+    padding: 100px 20px;
+    margin-top: calc(50% - 100px);
+    color: #ffffff;
+    opacity: 0.5;
+    font-size: 20px;
+    user-select: none;
+}
+
+.prev:hover, .next:hover {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.next {
+    right: 0;
+}
+
+
+
+/*CONTACT*/
+.year{
+    width: 50px;
+    float: left;
+}
+
+span{
+    opacity: 0;
+}
+
+
+
+ /* Materialize v0.97.6 (http://materializecss.com)
+ * Copyright 2014-2015 Materialize
+ * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
+ */
+
+.materialboxed {
+  display: block;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  position: relative;
+  transition: opacity .4s;
+}
+
+.materialboxed:hover {
+  will-change: left, top, width, height;
+}
+
+.materialboxed:hover:not(.active) {
+  opacity: .8;
+}
+
+.materialboxed.active {
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+}
+
+#materialbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #292929;
+  z-index: 1000;
+  will-change: opacity;
+}
+
+.materialbox-caption {
+  position: fixed;
+  display: none;
+  color: #fff;
+  line-height: 50px;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0%;
+  height: 50px;
+  z-index: 1000;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*pop up ends*/
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    /* mobile index */
+    .header {
+        display: block;
+        /*width: calc(100% - 400px);*/
+        width: calc(65% + 70px);
+        height: 40px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+
+
+    .index-grid {
+        width: calc(65% + 100px);
+    }
+
+    .blox {
+        width: 40%; 
+        max-width: 200px;
+        margin: 15px;
+    }
+
+    #footer-index{
+        width: calc(65% + 70px);
+
+    }
+
+
+
+
+    /* mobile galleries */
+    #galleryportrait, #gallerytravel, #galleryillustration, #galleryrestaurant {
+        width: 100%;
+        margin-top: 100px;
+    }
+    .img1 img{
+        display: block;
+        height: auto;
+        width: 100%;
+        padding-right:0;
+        padding-bottom: 3px;
+    }
+
+    /* mobile contact */
+
+
+
+
+    /*mobile small*/
+
+
+    .psm7 img, .psm10 img, .psm15 img, .psm18 img, .psm21 img, .psm22 img, .tsm29 img, .tsm40 img, .ism15 img {
+        width: 100%;
+        height: auto;
+        padding-bottom: 3px;
+        padding-right: 0;
+    }
+
+    .footnote {
+        display: none;
+    }
+
+}
+
+/*
+@media screen and (max-width: 500px) {
+    #nav ul li {
+        padding: 0 3%;
+        font-size: 0.6em;
+        text-align: center;
+        letter-spacing: 0.1em;
+    }
+}
+*/
+
+
