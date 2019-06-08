@@ -465,26 +465,5 @@ span{
 
 /*pop up ends*/
 
-
-
-
-@media screen and (max-width: 768px) {
-
-    /* mobile index */
-    .header {
-        display: block;
-        /*width: calc(100% - 400px);*/
-        width: calc(65% + 70px);
-        height: 40px;
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 80px;
-    }
-
-    #footer-index{
-        width: calc(65% + 70px);
-    }
-    /* mobile galleries */
-    /* mobile contact */
-    /*mobile small*/
-}
+/*@media screen and (max-width: 768px) {
+}*/
