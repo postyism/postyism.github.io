@@ -53,8 +53,9 @@ body a{
 
 #nav {
     margin: auto;
-    float:right;
+    /*float:right;*/
     padding-top: 6px;
+    margin-left: 400px;
 }
 
 #nav ul {
@@ -217,18 +218,15 @@ body a{
     width: 800px;
     display: inline-grid;
     grid-column-gap: 5px;
-    grid-row-gap: 10px;
-    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-row-gap: 5px;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
 }
 
 .grid-img-min{
     object-fit: cover;
-    width: 95px;
+    width: 85px;
     height: 240px;
 }
-
-
-
 
 /*#left-right ul li a {
     text-decoration: none;
@@ -297,7 +295,7 @@ body a{
 }
 
 .return-fix{
-    text-align: right;
+    margin-top:22px;
 }
 
 .content-vid{
@@ -360,97 +358,6 @@ body a{
     transition: opacity 0.2s;
 }
 
-/*#left-right {
-    margin: auto;
-    float: right;
-}
-
-#left-right ul {
-    list-style-type: none;
-    margin: auto;
-}
-
-#left-right ul li {
-    font-size: 1em;
-    float: left;
-    padding-left: 24px;
-    color: #000000;
-    text-align: center;
-}
-
-.left, .right {
-    cursor: pointer;
-}*/
-
-
-/*TATTOO GALLERY LIGHTBOX*/
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 50px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: #000000;
-}
-
-.modal-content {
-  position: relative;
-  background-color: #000000;
-  margin: auto;
-  padding: 0;
-  height: calc(100vh - 60px);
-  width: calc(100vh - 60px);
-}
-
-.close {
-    color: #ffffff;
-    opacity: 0.5;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 40px;
-}
-
-.close:hover {
-    opacity: 1;
-    transition: opacity 0.5s;
-    cursor: pointer;
-}
-
-.mySlides {
-    display: none;
-}
-
-.mySlides img{
-    height: calc(100vh - 60px);
-}
-
-.prev, .next {
-    cursor: pointer;
-    top: 0;
-    position: absolute;
-    width: auto;
-    padding: 100px 20px;
-    margin-top: calc(50% - 100px);
-    color: #ffffff;
-    opacity: 0.5;
-    font-size: 20px;
-    user-select: none;
-}
-
-.prev:hover, .next:hover {
-    opacity: 1;
-    transition: opacity 0.5s;
-}
-
-.next {
-    right: 0;
-}
-
 
 
 /*CONTACT*/
@@ -462,6 +369,46 @@ body a{
 span{
     opacity: 0;
 }
+
+
+
+/*PHOTO GALLERIES*/
+#gallerymusic, #gallerywedding, #galleryportrait, #gallery35mm {
+    margin-top:20px;
+    display: grid;
+    position: absolute;
+    left:0;
+    grid-gap: 5px;
+    /*grid-template-rows:1;*/
+}
+
+.fix {
+    position: fixed;
+}
+
+.img1 img{
+    display: block;
+    height: calc(100vh - 170px);
+    /*padding-right: 3px;*/
+}
+
+#gallerymusic{
+    grid-template-columns: repeat(38, auto);
+}
+
+#gallery35mm{
+    grid-template-columns: repeat(92, auto);
+}
+
+#galleryportrait{
+    grid-template-columns: repeat(12, auto);
+}
+
+#gallerywedding{
+    grid-template-columns: repeat(13, auto);
+}
+
+
 
 
 
@@ -534,68 +481,10 @@ span{
         margin-bottom: 80px;
     }
 
-
-    .index-grid {
-        width: calc(65% + 100px);
-    }
-
-    .blox {
-        width: 40%; 
-        max-width: 200px;
-        margin: 15px;
-    }
-
     #footer-index{
         width: calc(65% + 70px);
-
     }
-
-
-
-
     /* mobile galleries */
-    #galleryportrait, #gallerytravel, #galleryillustration, #galleryrestaurant {
-        width: 100%;
-        margin-top: 100px;
-    }
-    .img1 img{
-        display: block;
-        height: auto;
-        width: 100%;
-        padding-right:0;
-        padding-bottom: 3px;
-    }
-
     /* mobile contact */
-
-
-
-
     /*mobile small*/
-
-
-    .psm7 img, .psm10 img, .psm15 img, .psm18 img, .psm21 img, .psm22 img, .tsm29 img, .tsm40 img, .ism15 img {
-        width: 100%;
-        height: auto;
-        padding-bottom: 3px;
-        padding-right: 0;
-    }
-
-    .footnote {
-        display: none;
-    }
-
 }
-
-/*
-@media screen and (max-width: 500px) {
-    #nav ul li {
-        padding: 0 3%;
-        font-size: 0.6em;
-        text-align: center;
-        letter-spacing: 0.1em;
-    }
-}
-*/
-
-
