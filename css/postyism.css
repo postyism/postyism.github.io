@@ -353,12 +353,6 @@ body a{
     cursor: pointer;
 }
 
-.grid-tattoo-img:hover {
-    opacity: 0.75;
-    transition: opacity 0.2s;
-}
-
-
 
 /*CONTACT*/
 .year{
@@ -369,8 +363,6 @@ body a{
 span{
     opacity: 0;
 }
-
-
 
 /*PHOTO GALLERIES*/
 #gallerymusic, #gallerywedding, #galleryportrait, #gallery35mm {
