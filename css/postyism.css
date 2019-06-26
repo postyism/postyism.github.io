@@ -217,14 +217,14 @@ body a{
 .grid-gallery-min{
     width: 800px;
     display: inline-grid;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
 }
 
 .grid-img-min{
     object-fit: cover;
-    width: 85px;
+    width: 75px;
     height: 240px;
 }
 
