@@ -21,6 +21,16 @@ body a{
     color: #000000;
 }
 
+::-moz-selection {
+  color: #ffffff;
+  background: #807d67;
+}
+
+::selection {
+  color: #ffffff;
+  background: #807d67;
+}
+
 /*=============INDEX=============*/
 
 .con-index {
