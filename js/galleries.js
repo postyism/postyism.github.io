@@ -7,12 +7,12 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-	if ($(this).width() > 768) {
-		//console.log(">768");
-		$('html, body, *').mousewheel(function(e, delta) {
-			this.scrollLeft -= (delta * 1);
-			e.preventDefault();
-		});
+	// if ($(this).width() > 768) {
+	// 	//console.log(">768");
+	// 	$('html, body, *').mousewheel(function(e, delta) {
+	// 		this.scrollLeft -= (delta * 1);
+	// 		e.preventDefault();
+	// 	});
 
 
 		// ======== POP UP TRAVEL =========

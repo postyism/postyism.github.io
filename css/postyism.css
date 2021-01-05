@@ -65,7 +65,7 @@ body a{
     margin: auto;
     /*float:right;*/
     padding-top: 6px;
-    margin-left: 400px;
+    margin-left: 200px;
 }
 
 #nav ul {
@@ -75,12 +75,12 @@ body a{
 
 #nav ul li {
     font-size: 1em;
-    float: left;
+    float: right;
     padding-left: 24px;
     color: #000000;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 }
 
 #nav ul li a {
@@ -403,12 +403,9 @@ span{
 }
 
 #galleryportrait{
-    grid-template-columns: repeat(12, auto);
+    grid-template-columns: repeat(25, auto);
 }
 
-#gallerywedding{
-    grid-template-columns: repeat(13, auto);
-}
 
 
 
