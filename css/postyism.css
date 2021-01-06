@@ -324,6 +324,10 @@ body a{
     width: 33%;
 }
 
+.img-quart{
+    width: 24.6%;
+}
+
 .img-medium{
     height:500px;
 }
@@ -417,7 +421,6 @@ span{
  */
 
 .materialboxed {
-  display: block;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
   position: relative;
