@@ -63,31 +63,27 @@ body a{
 
 nav {
     margin: auto;
-    /*float:right;*/
     padding-top: 6px;
     margin-left: 200px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: auto;
-}
-
-nav ul li {
     font-size: 1em;
-    float: right;
-    padding-left: 24px;
     color: #000000;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 
+nav ul li {
+    float: right;
+    padding-left: 24px;
+    list-style-type: none;
+    margin: auto;
+}
+
 nav ul li:last-child{
     padding-left: 0;
 }
 
-nav ul li a {
+nav a {
     text-decoration: none;
     color: #777777;
 }
@@ -383,7 +379,7 @@ span{
 
 /*PHOTO GALLERIES*/
 #gallerymusic, #galleryportrait, #gallery35mm {
-    margin-top:20px;
+    margin-top:50px;
     display: grid;
     position: absolute;
     left:0;
@@ -475,24 +471,34 @@ span{
     .con-index{
         width: 90%;
     }
-
     .header{
-        display: block;
+        width: 100%;
     }
-
     nav{
         display: block;
         margin: 0;
         margin-right: 0;
-        margin-top: 30px;
+        margin-top: 20px;
         margin-left: 0;
         position: absolute;
+        font-size: 0.9em;
+        letter-spacing: 2px;
+    }
+
+    nav ul li{
+        padding-left: 12px;
     }
 
     .header-page {
         width: 90%;
     }
-    
+    .index-content {
+        width: 100%;
+    }
+
+    #footer-index{
+        width: 100%;
+    }
     .content-page{
         width: 90%;
     }
@@ -507,6 +513,25 @@ span{
 
     .grid-gallery a:hover .grid-each p{
         display: none;
+    }
+
+    #gallerymusic, #galleryportrait, #gallery35mm {
+        margin-top:50px;
+        width: 100vw;
+        display: grid;
+        position: absolute;
+        left:0;
+        grid-gap: 5px;
+    }
+
+    #gallerymusic img, #galleryportrait img, #gallery35mm img {
+        object-fit: cover;
+        width: calc((100vw - 20px)/5);
+        height: calc((100vw - 20px)/5);
+    }
+
+    .fixed {
+        position:relative
     }
 
 }
