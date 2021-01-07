@@ -9,12 +9,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<script src="../js/jquery-2.2.2.min.js" type="text/javascript"></script>
-		<script src="../js/fade.js" type="text/javascript"></script>		
+		<script src="../js/fade.js" type="text/javascript"></script>
+		<script src="../js/materialize.js" type="text/javascript"></script>	
 
 		<link rel="stylesheet" type="text/css" href="../css/postyism.css"/>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="../favicon-yi.ico" type="image/x-icon">
-		
+		<script type="text/javascript">
+			$(window).resize(function(){
+			 if($(window).width()<768){
+			  $('.materialboxed').removeClass('materialboxed');
+			  $('.material-placeholder').removeClass('material-placeholder');
+			  $('.initialized').removeClass('initialized');
+			 }
+			});
+		</script>
 	</head>
 	<body>
 		<div class="con-page">
@@ -23,14 +32,14 @@
 				<a href="../index.html">
 					<h1>postyism</h1>
 				</a>
-				<div id="nav">
+				<nav>
 					<ul>
 						<li><a href="../contact.html">contact/cv</a></li>
 						<li><a href="../misc.html">misc</a></li>
 						<li><a href="../tattoos.html">tattoos</a></li>
 						<li><a href="../projects.html">projects</a></li>
 					</ul>
-				</div>
+				</nav>
 			</div>
 
 			<div class="content-page">
@@ -42,19 +51,29 @@
 					<a href="../misc.html"> &#8617; return_</a>
 				</div>
 
-				<div class="content-img">
-					<img class="img-half" src="../img/proj/doodle-midautumn.jpg" alt="doodle">
-					<img class="img-half" src="../img/proj/doodle-newyear.jpg" alt="doodle">
-					<img class="img-half" src="../img/proj/doodle-hz.jpg" alt="doodle">
-					<img class="img-half" src="../img/proj/doodle-skate.jpg" alt="doodle">
-					<img class="img-half" src="../img/proj/doodle-dark.jpg" alt="doodle">
-					<img class="img-half" src="../img/proj/doodle-bike.jpg" alt="doodle">
-					<img class="img-half" src="../img/proj/doodle-sailor.jpg" alt="doodle">
-					<img class="img-half" src="../img/proj/doodle-charon.jpg" alt="doodle">
-					<img class="img-half" src="../img/proj/doodle-coverme.jpg" alt="doodle">
-					<img class="img-half" src="../img/proj/doodle-nap.jpg" alt="doodle">
-					<img class="img-half" src="../img/proj/doodle-lifedrawing.jpg" alt="doodle">
-					<img class="img-half" src="../img/proj/doodle-sleeve.jpg" alt="doodle">
+				<div class="img-grid g2">
+					<img class="materialboxed" src="../img/proj/doodle-midautumn.jpg" alt="doodle">
+					<img class="materialboxed" src="../img/proj/doodle-newyear.jpg" alt="doodle">
+				</div>
+				<div class="img-grid g2">
+					<img class="materialboxed" src="../img/proj/doodle-hz.jpg" alt="doodle">
+					<img class="materialboxed" src="../img/proj/doodle-skate.jpg" alt="doodle">
+				</div>
+				<div class="img-grid g2">
+					<img class="materialboxed" src="../img/proj/doodle-dark.jpg" alt="doodle">
+					<img class="materialboxed" src="../img/proj/doodle-bike.jpg" alt="doodle">
+				</div>
+				<div class="img-grid g2">
+					<img class="materialboxed" src="../img/proj/doodle-sailor.jpg" alt="doodle">
+					<img class="materialboxed" src="../img/proj/doodle-charon.jpg" alt="doodle">
+				</div>
+				<div class="img-grid g2">
+					<img class="materialboxed" src="../img/proj/doodle-coverme.jpg" alt="doodle">
+					<img class="materialboxed" src="../img/proj/doodle-nap.jpg" alt="doodle">
+				</div>
+				<div class="img-grid g2">
+					<img class="materialboxed" src="../img/proj/doodle-lifedrawing.jpg" alt="doodle">
+					<img class="materialboxed" src="../img/proj/doodle-sleeve.jpg" alt="doodle">
 				</div>
 				
 
