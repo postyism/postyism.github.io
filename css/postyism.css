@@ -481,12 +481,12 @@ span{
         margin-top: 20px;
         margin-left: 0;
         position: absolute;
-        font-size: 0.9em;
+        font-size: min(2.2vw, 1em);
         letter-spacing: 2px;
     }
 
     nav ul li{
-        padding-left: 12px;
+        padding-left: 4vw;
     }
 
     .header-page {
