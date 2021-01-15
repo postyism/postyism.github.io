@@ -373,6 +373,13 @@ nav ul li a:hover {
     float: left;
 }
 
+dt:before {
+  content: "";
+  display: block;
+}
+dt, dd {display: inline;}
+dl {overflow: hidden;}
+
 span{
     opacity: 0;
 }
@@ -436,6 +443,7 @@ span{
 .materialboxed.active {
   cursor: -webkit-zoom-out;
   cursor: zoom-out;
+  object-fit:contain;
 }
 
 #materialbox-overlay {
@@ -467,7 +475,41 @@ span{
 
 /*========MOBILE========*/
 
+#hamburger{
+    position: absolute;
+    top:10px;
+    right: 0;
+    cursor: pointer;
+    display: none;
+}
+
+#bar1, #bar2, #bar3{
+    width:30px;
+    height:4px;
+    margin-bottom: 6px;
+    background-color: #aaaaaa;
+    transition:0.5s;
+}
+
+.change #bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px,6px);
+    transform: rotate(-45deg) translate(-6px,6px);
+}
+
+.change #bar2{
+    opacity: 0;
+}
+
+.change #bar3{
+    -webkit-transform: rotate(45deg) translate(-8px,-8px);
+    transform: rotate(45deg) translate(-8px,-8px);
+}
+
+
 @media only screen and (max-width:768px) {
+    #hamburger{
+        display: block;
+    }
     .con-index{
         width: 90%;
     }
@@ -475,7 +517,7 @@ span{
         width: 100%;
     }
     nav{
-        display: block;
+        display: none;
         margin: 0;
         margin-right: 0;
         margin-top: 20px;
@@ -484,6 +526,10 @@ span{
         font-size: min(2.2vw, 1em);
         letter-spacing: 2px;
     }
+
+/*    .indexnav{
+        display: block;
+    }*/
 
     nav ul li{
         padding-left: 4vw;
@@ -535,11 +581,4 @@ span{
     }
 
 }
-
-
-/*@media screen and (min-width:641px) {
-    #hamburger{
-        display: none;
-    }
-}*/
 

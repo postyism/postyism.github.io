@@ -22,3 +22,11 @@ $(document).ready(function(){
 function delay(URL){
     setTimeout(function(){window.location = URL },500);
 }
+
+
+$(document).ready(function(){           
+    $("#hamburger").click(function(){
+        $(this).toggleClass("change");
+        $("nav").fadeToggle();
+    });
+});
