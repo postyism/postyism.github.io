@@ -373,13 +373,6 @@ nav ul li a:hover {
     float: left;
 }
 
-dt:before {
-  content: "";
-  display: block;
-}
-dt, dd {display: inline;}
-dl {overflow: hidden;}
-
 span{
     opacity: 0;
 }
@@ -523,7 +516,7 @@ span{
         margin-top: 20px;
         margin-left: 0;
         position: absolute;
-        font-size: min(2.2vw, 1em);
+        font-size: min(2.5vw, 1.1em);
         letter-spacing: 2px;
     }
 
@@ -532,7 +525,7 @@ span{
     }*/
 
     nav ul li{
-        padding-left: 4vw;
+        padding-left: 5vw;
     }
 
     .header-page {
