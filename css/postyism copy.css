@@ -64,16 +64,12 @@ body a{
 nav {
     margin: auto;
     padding-top: 6px;
+    margin-left: 200px;
     font-size: 1em;
     color: #000000;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 5px;
-}
-
-.galleryfix{
-    right: calc(50vw - 400px);
-    position: fixed;
 }
 
 nav ul li {
@@ -295,7 +291,7 @@ nav ul li a:hover {
 }
 
 .return-fix{
-    margin-top:20px;
+    margin-top:22px;
 }
 
 .content-vid{
@@ -383,18 +379,17 @@ span{
 
 /*PHOTO GALLERIES*/
 #gallerymusic, #galleryportrait, #gallery35mm {
+    margin-top:50px;
     display: grid;
     position: absolute;
     left:0;
     grid-gap: 5px;
-    margin-top: 50px;
     /*grid-template-rows:1;*/
 }
 
 #gallerymusic img, #galleryportrait img, #gallery35mm img {
     display: block;
     height: calc(100vh - 170px);
-    object-fit: cover;
 }
 
 .fix {
@@ -441,7 +436,7 @@ span{
 .materialboxed.active {
   cursor: -webkit-zoom-out;
   cursor: zoom-out;
-  object-fit: contain;
+  object-fit:contain;
 }
 
 #materialbox-overlay {
@@ -560,23 +555,22 @@ span{
     }
 
     #gallerymusic, #galleryportrait, #gallery35mm {
-        margin-top:0;
+        margin-top:50px;
         width: 100vw;
-        grid-template-columns: repeat(5, auto);
+        display: grid;
+        position: absolute;
+        left:0;
+        grid-gap: 5px;
     }
 
     #gallerymusic img, #galleryportrait img, #gallery35mm img {
+        object-fit: cover;
         width: calc((100vw - 20px)/5);
         height: calc((100vw - 20px)/5);
     }
 
-    .fix {
-        position:relative;
-    }
-
-    .galleryfix{
-        position: absolute;
-        right: auto;
+    .fixed {
+        position:relative
     }
 
 }
