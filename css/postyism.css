@@ -208,12 +208,12 @@ nav ul li a:hover {
     opacity: 0;
     margin-top: -5px;
     text-align: center;
-
-/*    display: block;
+    /* see below: how to keep the background colour on hover */
+    /* display: block;
     background-color: #ffffff;
     margin-top: -24px;
     z-index: 3;
-    height: 24px;*/
+    height: 24px; */
 }
 
 .grid-each-show p{
@@ -224,7 +224,8 @@ nav ul li a:hover {
 
 .grid-gallery a:hover .grid-each p{
     opacity: 1;
-    transition: opacity 0.2s;
+    /* transition: opacity 0.2s; */
+    background-color: #ffffff;
 }
 
 .grid-gallery a:hover .grid-each-show p{
@@ -394,7 +395,8 @@ span{
 #gallerymusic img, #galleryportrait img, #gallery35mm img {
     display: block;
     height: calc(100vh - 170px);
-    object-fit: cover;
+    /* comment this out to allow for image resize */
+    /* object-fit: cover; */
 }
 
 .fix {
@@ -441,7 +443,8 @@ span{
 .materialboxed.active {
   cursor: -webkit-zoom-out;
   cursor: zoom-out;
-  object-fit: contain;
+  /* object-fit: contain; */
+  object-fit: none;
 }
 
 #materialbox-overlay {
