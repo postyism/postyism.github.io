@@ -5,7 +5,7 @@ $(document).ready(function() {
 $(window).resize(fadeInImages);
 
 function fadeInImages() {
-	$(".content-page").fadeIn(1000);
+	$("main").fadeIn(1000);
 	// if ($(this).width() > 768) {
 	// 	$(".landingimage").fadeIn(1500);
 	// 	//console.log("fadeIn");
