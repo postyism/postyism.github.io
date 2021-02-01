@@ -68,7 +68,7 @@ nav {
     color: #000000;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
 }
 
 .galleryfix{
@@ -78,7 +78,7 @@ nav {
 
 nav ul li {
     float: right;
-    padding-left: 24px;
+    padding-left: 30px;
     list-style-type: none;
     margin: auto;
 }
