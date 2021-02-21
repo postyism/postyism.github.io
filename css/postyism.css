@@ -528,16 +528,33 @@ span{
         margin-top: 20px;
         margin-left: 0;
         position: absolute;
-        font-size: min(2.5vw, 1.1em);
+        font-size: min(2.3vw, 1em);
         letter-spacing: 2px;
     }
 
-/*    .indexnav{
-        display: block;
-    }*/
-
     nav ul li{
-        padding-left: 5vw;
+        padding-left: 4vw;
+    }
+
+    .biolinks{
+        text-transform: none;
+        font-style: italic;
+        display: block;
+        padding-top: 50px;
+        font-size: max(5vw, 1.5em);
+        letter-spacing: 5px;
+    }
+
+    .biolinks ul li{
+        float: left;
+        clear: both;
+        padding: 0;
+        padding-top: 40px;
+        
+    }
+
+    .biolinks ul li a{
+        text-decoration: underline;
     }
 
     .header-page {
