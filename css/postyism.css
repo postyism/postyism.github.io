@@ -387,6 +387,12 @@ main{
 span{
     opacity: 0;
 }
+.break100{
+    line-height: 100px;
+}
+.break200{
+    line-height: 200px;
+}
 
 /*PHOTO GALLERIES*/
 .gallerymusic, .galleryportrait, .gallery35mm {
