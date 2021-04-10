@@ -1,4 +1,4 @@
-html, body, ul, li, p, div, img, h1, h2, h3 {
+html, body, ul, li, p, div, img, h1, h2, h3, button {
     margin: 0;
     padding: 0;
 }
@@ -390,6 +390,20 @@ main{
 .year{
     width: 50px;
     float: left;
+}
+
+#mail{
+    display: inline-block;
+}
+
+button{
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    margin-left: 5px;
+    background-color: #ffffff;
+    font-size: 12px;
+    cursor: pointer;
 }
 
 span{

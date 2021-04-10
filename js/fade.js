@@ -23,6 +23,17 @@ function delay(URL){
     setTimeout(function(){window.location = URL },500);
 }
 
+function copyToClipboard(element) {
+	var $temp = $("<input>");
+	$("body").append($temp);
+
+	$temp.val($(element).text()).select();
+	document.execCommand("copy");
+	$temp.remove();
+
+	alert("email copied.");
+  }
+  
 
 $(document).ready(function(){           
     $("#hamburger").click(function(){
