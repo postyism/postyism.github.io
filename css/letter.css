@@ -223,7 +223,7 @@ span{
 
     .costar{
         width: 180px;
-        margin-left: calc(50% - 80px);
+        margin-left: calc(50% - 70px);
         margin-top: -200px;
         opacity: 0.3;
     }
