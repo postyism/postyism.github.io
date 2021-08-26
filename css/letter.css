@@ -206,11 +206,11 @@ span{
     }
 
     .g2{
-        grid-template-columns: 20% auto;
+        grid-template-columns: 15% auto;
     }
 
     .g3{
-        grid-template-columns: 20% 10% auto;
+        grid-template-columns: 15% 10% auto;
     }
 
     .hover-text p, .opa10{
