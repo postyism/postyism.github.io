@@ -118,11 +118,11 @@ nav ul li:last-child{
 
 .opa50{
     opacity: 0.5;
-    transition: opacity .5s;
+    transition: opacity 1s;
 }
 .opa50:hover{
     opacity: 1;
-    transition: opacity .5s;
+    transition: opacity 1s;
 }
 
 .opa10{
@@ -132,6 +132,22 @@ nav ul li:last-child{
 .opa10:hover{
     opacity: 1;
     transition: opacity 1s;
+}
+
+.hover-text p{
+    opacity: 0;
+}
+
+.hover-text:hover p{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.inline{
+    display: inline;
+}
+.thru{
+    text-decoration:line-through;
 }
 
 .grid{
