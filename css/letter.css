@@ -213,16 +213,16 @@ span{
         grid-template-columns: 20% 10% auto;
     }
 
+    .hover-text p, .opa10{
+        opacity: 0.5;
+    }
+
     .costar{
         width: 180px;
-        margin-left: -80%;
+        margin-left: calc(50% - 80px);
         margin-top: -200px;
+        opacity: 0.3;
     }
-
-    .hover-text p, .opa10, .opa50{
-        opacity: 0.8;
-    }
-
     .rav{
         grid-template-columns: 100%;
         overflow: visible;
