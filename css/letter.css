@@ -217,6 +217,10 @@ span{
         opacity: 0.5;
     }
 
+    .arrow{
+        font-size: 1.1em;
+    }
+
     .costar{
         width: 180px;
         margin-left: calc(50% - 80px);
