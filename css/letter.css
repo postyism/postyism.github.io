@@ -15,6 +15,7 @@ body {
     /*min-height: 500px;*/
     background-image: url("../img/letter/paper2.jpg");
     background-repeat: repeat;
+    overflow-x: hidden;
 }
 
 
@@ -153,7 +154,6 @@ nav ul li:last-child{
     grid-row-gap: 0px;
     align-items:center;
     height: 500px;
-    overflow: hidden;
 }
 
 .g2{
@@ -202,7 +202,6 @@ span{
     }
     .grid{
         width: 100%;
-        overflow: hidden;
     }
 
     .g2{
@@ -229,7 +228,6 @@ span{
     }
     .g1-mobile{
         grid-template-columns: 100%;
-        overflow: visible;
     }
 }
 
