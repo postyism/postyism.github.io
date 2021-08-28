@@ -109,6 +109,10 @@ nav ul li:last-child{
     z-index: 2;
 }
 
+.lower250{
+    margin-top: 250px;
+}
+
 .lower150{
     margin-top: 150px;
 }
