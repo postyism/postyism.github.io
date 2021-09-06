@@ -420,7 +420,7 @@ span{
 }
 
 /*PHOTO GALLERIES*/
-.gallerymusic, .galleryportrait, .gallery35mm {
+.galleryphoto, .galleryportrait, .gallery35mm {
     display: grid;
     position: absolute;
     left:0;
@@ -429,7 +429,7 @@ span{
     /*grid-template-rows:1;*/
 }
 
-.gallerymusic img, .galleryportrait img, .gallery35mm img {
+.galleryphoto img, .galleryportrait img, .gallery35mm img {
     display: block;
     height: calc(100vh - 170px);
     object-fit: cover;
@@ -439,8 +439,8 @@ span{
     position: fixed;
 }
 
-.gallerymusic{
-    grid-template-columns: repeat(38, auto);
+.galleryphoto{
+    grid-template-columns: repeat(43, auto);
 }
 
 .gallery35mm{
@@ -614,13 +614,13 @@ span{
         display: none;
     }
 
-    .gallerymusic, .galleryportrait, .gallery35mm {
+    .galleryphoto, .galleryportrait, .gallery35mm {
         margin-top:0;
         width: 100vw;
         grid-template-columns: repeat(5, auto);
     }
 
-    .gallerymusic img, .galleryportrait img, .gallery35mm img {
+    .galleryphoto img, .galleryportrait img, .gallery35mm img {
         width: calc((100vw - 20px)/5);
         height: calc((100vw - 20px)/5);
     }
