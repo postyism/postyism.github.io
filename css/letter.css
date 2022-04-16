@@ -171,6 +171,9 @@ nav ul li:last-child{
 .g3{
     grid-template-columns: 40% 20% auto;
 }
+.g4{
+    grid-template-columns: 30% 10% 30% auto;
+}
 
 .g2-repeat{
     grid-template-columns: repeat(2, minmax(0, 1fr));
