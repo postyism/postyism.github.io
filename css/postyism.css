@@ -440,7 +440,7 @@ span{
 }
 
 .galleryphoto{
-    grid-template-columns: repeat(43, auto);
+    grid-template-columns: repeat(53, auto);
 }
 
 .gallery35mm{
