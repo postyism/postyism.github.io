@@ -252,9 +252,13 @@ main{
 .grid-each img{
     object-fit: cover;
     width: 100%;
-    height: calc(80vh - 200px);
+    
     min-height: 100px;
+}
+
+.grid-short img{
     max-height: 400px;
+    height: calc(80vh - 200px);
 }
 
 .hi{
@@ -420,7 +424,7 @@ span{
 }
 
 /*PHOTO GALLERIES*/
-.galleryphoto, .galleryportrait, .gallery35mm {
+.galleryevents, .gallerymusic, .galleryportraits, .gallery35mm {
     display: grid;
     position: absolute;
     left:0;
@@ -429,7 +433,7 @@ span{
     /*grid-template-rows:1;*/
 }
 
-.galleryphoto img, .galleryportrait img, .gallery35mm img {
+.galleryevents img, .gallerymusic img, .galleryportraits img, .gallery35mm img {
     display: block;
     height: calc(100vh - 170px);
     object-fit: cover;
@@ -439,15 +443,19 @@ span{
     position: fixed;
 }
 
-.galleryphoto{
-    grid-template-columns: repeat(53, auto);
+.galleryevents{
+    grid-template-columns: repeat(15, auto);
+}
+
+.gallerymusic{
+    grid-template-columns: repeat(35, auto);
 }
 
 .gallery35mm{
     grid-template-columns: repeat(92, auto);
 }
 
-.galleryportrait{
+.galleryportraits{
     grid-template-columns: repeat(25, auto);
 }
 
@@ -614,13 +622,13 @@ span{
         display: none;
     }
 
-    .galleryphoto, .galleryportrait, .gallery35mm {
+    .galleryevents, .gallerymusic, .galleryportraits, .gallery35mm {
         margin-top:0;
         width: 100vw;
         grid-template-columns: repeat(5, auto);
     }
 
-    .galleryphoto img, .galleryportrait img, .gallery35mm img {
+    .galleryevents img, .gallerymusic img, .galleryportraits img, .gallery35mm img {
         width: calc((100vw - 20px)/5);
         height: calc((100vw - 20px)/5);
     }
