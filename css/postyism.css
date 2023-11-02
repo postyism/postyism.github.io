@@ -424,7 +424,7 @@ span{
 }
 
 /*PHOTO GALLERIES*/
-.galleryevents, .gallerymusic, .galleryportraits, .gallery35mm {
+.galleryevents, .gallerymusic, .gallerystitch, .gallery35mm {
     display: grid;
     position: absolute;
     left:0;
@@ -433,7 +433,7 @@ span{
     /*grid-template-rows:1;*/
 }
 
-.galleryevents img, .gallerymusic img, .galleryportraits img, .gallery35mm img {
+.galleryevents img, .gallerymusic img, .gallerystitch img, .gallery35mm img {
     display: block;
     height: calc(100vh - 170px);
     object-fit: cover;
@@ -444,7 +444,7 @@ span{
 }
 
 .galleryevents{
-    grid-template-columns: repeat(15, auto);
+    grid-template-columns: repeat(30, auto);
 }
 
 .gallerymusic{
@@ -455,8 +455,8 @@ span{
     grid-template-columns: repeat(92, auto);
 }
 
-.galleryportraits{
-    grid-template-columns: repeat(25, auto);
+.gallerystitch{
+    grid-template-columns: repeat(5, auto);
 }
 
 
@@ -622,15 +622,23 @@ span{
         display: none;
     }
 
-    .galleryevents, .gallerymusic, .galleryportraits, .gallery35mm {
+    .galleryevents, .gallerymusic, .gallerystitch, .gallery35mm {
         margin-top:0;
         width: 100vw;
         grid-template-columns: repeat(5, auto);
     }
+    .gallerystitch {
+        grid-template-columns: repeat(1, auto);
+    }
 
-    .galleryevents img, .gallerymusic img, .galleryportraits img, .gallery35mm img {
+    .galleryevents img, .gallerymusic img, .gallery35mm img {
         width: calc((100vw - 20px)/5);
         height: calc((100vw - 20px)/5);
+    }
+
+    .gallerystitch img {
+        width: 100vw;
+        height: calc((100vw - 150px)/5);
     }
 
     .gtext2{
