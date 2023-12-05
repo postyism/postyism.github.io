@@ -444,11 +444,11 @@ span{
 }
 
 .galleryevents{
-    grid-template-columns: repeat(30, auto);
+    grid-template-columns: repeat(40, auto);
 }
 
 .gallerymusic{
-    grid-template-columns: repeat(35, auto);
+    grid-template-columns: repeat(40, auto);
 }
 
 .gallery35mm{
