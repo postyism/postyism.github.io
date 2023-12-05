@@ -444,7 +444,7 @@ span{
 }
 
 .galleryevents{
-    grid-template-columns: repeat(40, auto);
+    grid-template-columns: repeat(45, auto);
 }
 
 .gallerymusic{
