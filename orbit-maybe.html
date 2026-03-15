@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>prototype orbit maybe?</title>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+</head>
+
+<body>
+	<p>prototype orbit maybe?</p>
+<script>
+
+let stars = [];
+let yearSlider;
+let maxYear = 2026;
+
+function setup(){
+
+createCanvas(window.innerWidth, window.innerHeight);
+
+// year slider
+yearSlider = createSlider(1995, maxYear, 2026);
+yearSlider.position(40, height-40);
+yearSlider.style('width','300px');
+
+// create archive items
+for(let i=0;i<30;i++){
+
+  let orbitType = i < 14 ? "inner" : "outer";
+
+  stars.push({
+
+    orbitRadius: orbitType === "inner"
+      ? random(120,180)
+      : random(260,340),
+
+    angle: random(TWO_PI),
+
+    speed: orbitType === "inner"
+      ? random(0.0005,0.001)
+      : random(0.0002,0.0008),
+
+    size: orbitType === "inner" ? 7 : 5,
+
+    tilt: 0.4,
+
+    label: "fragment "+(i+1),
+
+    year: floor(random(1997, maxYear)),
+
+    orbit: orbitType
+
+  });
+
+}
+
+}
+
+function draw(){
+
+background(0);
+
+translate(width/2,height/2);
+
+// mouse gravity slow effect
+let d = dist(mouseX,mouseY,width/2,height/2);
+let slowFactor = map(d,0,400,0.1,1);
+slowFactor = constrain(slowFactor,0.1,1);
+
+// orbit guides
+noFill();
+stroke(30);
+ellipse(0,0,320,160);
+ellipse(0,0,620,300);
+noStroke();
+
+// center node
+fill(255,200,120);
+circle(0,0,20);
+
+// display current year
+resetMatrix();
+fill(255);
+textSize(14);
+text("Year: "+yearSlider.value(),40,height-50);
+
+translate(width/2,height/2);
+
+// stars
+for(let s of stars){
+
+if(s.year > yearSlider.value()) continue;
+
+s.angle += s.speed * slowFactor;
+
+let x = cos(s.angle)*s.orbitRadius;
+let y = sin(s.angle)*s.orbitRadius*s.tilt;
+
+// star glow
+for(let g=3; g>0; g--){
+  fill(255,255,255,20);
+  circle(x,y,s.size*g);
+}
+
+// main star
+fill(255);
+circle(x,y,s.size);
+
+// hover label
+let mx = mouseX - width/2;
+let my = mouseY - height/2;
+
+if(dist(mx,my,x,y) < 10){
+
+  fill(255);
+  textAlign(LEFT);
+  text(s.label+" ("+s.year+")",x+12,y);
+
+}
+
+}
+
+}
+
+function mousePressed(){
+
+let mx = mouseX - width/2;
+let my = mouseY - height/2;
+
+for(let s of stars){
+
+let x = cos(s.angle)*s.orbitRadius;
+let y = sin(s.angle)*s.orbitRadius*s.tilt;
+
+if(dist(mx,my,x,y) < 10){
+
+alert("Open archive item: "+s.label);
+
+}
+
+}
+
+}
+
+</script>
+</body>
+</html>
