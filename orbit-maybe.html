@@ -23,23 +23,23 @@ yearSlider.position(40, height-40);
 yearSlider.style('width','300px');
 
 // create archive items
-for(let i=0;i<30;i++){
+for(let i=0;i<80;i++){
 
   let orbitType = i < 14 ? "inner" : "outer";
 
   stars.push({
 
     orbitRadius: orbitType === "inner"
-      ? random(120,180)
-      : random(260,340),
+      ? random(90,360)
+      : random(300,640),
 
     angle: random(TWO_PI),
 
     speed: orbitType === "inner"
-      ? random(0.0005,0.001)
-      : random(0.0002,0.0008),
+      ? random(0.0002,0.0003)
+      : random(0.0001,0.0004),
 
-    size: orbitType === "inner" ? 7 : 5,
+    size: orbitType === "inner" ? 7 : 6,
 
     tilt: 0.4,
 
@@ -68,13 +68,13 @@ slowFactor = constrain(slowFactor,0.1,1);
 
 // orbit guides
 noFill();
-stroke(30);
-ellipse(0,0,320,160);
-ellipse(0,0,620,300);
+stroke(40);
+ellipse(0,0,640,320);
+ellipse(0,0,1240,600);
 noStroke();
 
 // center node
-fill(255,200,120);
+fill(100,80,25);
 circle(0,0,20);
 
 // display current year
@@ -97,7 +97,7 @@ let y = sin(s.angle)*s.orbitRadius*s.tilt;
 
 // star glow
 for(let g=3; g>0; g--){
-  fill(255,255,255,20);
+  fill(255,255,255,50);
   circle(x,y,s.size*g);
 }
 
