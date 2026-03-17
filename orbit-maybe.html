@@ -7,6 +7,7 @@
 
 <body>
 	<p>prototype orbit maybe?</p>
+    <img height="500px" src="img/fragments.jpg">
 <script>
 
 let stars = [];
@@ -19,7 +20,7 @@ createCanvas(window.innerWidth, window.innerHeight);
 
 // year slider
 yearSlider = createSlider(1995, maxYear, 2026);
-yearSlider.position(40, height-40);
+yearSlider.position(40, height-200);
 yearSlider.style('width','300px');
 
 // create archive items
@@ -81,7 +82,7 @@ circle(0,0,20);
 resetMatrix();
 fill(255);
 textSize(14);
-text("Year: "+yearSlider.value(),40,height-50);
+text("Year: "+yearSlider.value(),40,height-700);
 
 translate(width/2,height/2);
 
