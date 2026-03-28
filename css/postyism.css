@@ -430,19 +430,18 @@ h3{
 
 .grid-tattoo{
     width: 100%;
-    display: inline-grid;
+    display: grid;
     position: absolute;
     left: 0;
     margin: auto;
-    column-gap: 5px;
-    grid-row-gap: 0px;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .grid-tattoo img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    width: calc((100vw - 20px)/5);
-    height: calc((100vw - 20px)/5);
+    display: block;
 }
 
 
@@ -477,7 +476,7 @@ span{
 }
 
 /*PHOTO GALLERIES*/
-.galleryevents, .gallerymusic, .gallerystitch, .gallery35mm {
+.galleryevents, .gallerymusic, .gallerystitch, .gallery35mm, .gallerylove {
     display: grid;
     position: absolute;
     left:0;
@@ -486,10 +485,10 @@ span{
     /*grid-template-rows:1;*/
 }
 
-.galleryevents img, .gallerymusic img, .gallerystitch img, .gallery35mm img {
+.galleryevents img, .gallerymusic img, .gallerystitch img, .gallery35mm img, .gallerylove img {
     display: block;
-    height: calc(100vh - 170px);
     object-fit: cover;
+    height: calc(100vh - 170px);
 }
 
 .fix {
@@ -505,13 +504,16 @@ span{
 }
 
 .gallery35mm{
-    grid-template-columns: repeat(92, auto);
+    grid-template-columns: repeat(99, auto);
 }
 
 .gallerystitch{
     grid-template-columns: repeat(5, auto);
 }
 
+.gallerylove{
+    grid-template-columns: repeat(20, auto);
+}
 
 
  /* Materialize v0.97.6 (http://materializecss.com)
@@ -683,18 +685,20 @@ span{
         display: none;
     }
 
-    .galleryevents, .gallerymusic, .gallerystitch, .gallery35mm {
+    .galleryevents, .gallerymusic, .gallerystitch, .gallery35mm, .gallerylove, .grid-tattoo {
         margin-top:0;
         width: 100vw;
-        grid-template-columns: repeat(5, auto);
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0px;
     }
     .gallerystitch {
         grid-template-columns: repeat(1, auto);
     }
 
-    .galleryevents img, .gallerymusic img, .gallery35mm img {
-        width: calc((100vw - 20px)/5);
-        height: calc((100vw - 20px)/5);
+    .galleryevents img, .gallerymusic img, .gallery35mm img, .gallerylove img, .grid-tattoo img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        height: auto;
     }
 
     .gallerystitch img {
