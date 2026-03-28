@@ -6,7 +6,7 @@ html, body, ul, li, p, div, img, h1, h2, h3, button {
 body {
     background: #ffffff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: #fbfafa;
     color: #777777;
     font-size: 12px;
     line-height: 1.5;
@@ -227,8 +227,6 @@ main{
     position: absolute;
     bottom: 0;
     width: 100%;
-
-
     display: block;
     background-color: #ffffff;
     margin-top: -24px;
