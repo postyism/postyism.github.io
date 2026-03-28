@@ -348,7 +348,7 @@ h3{
     list-style-type: none;
 }
 .content-left ul li{
-   margin-top: 5px;
+    margin-top: 5px;
 }
 
 .content-vid{
@@ -362,10 +362,24 @@ h3{
     align-items: center;
 }
 
+
 .img-grid img{
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.g2to1 {
+    grid-template-columns: 2fr 1fr;
+}
+
+
+.g2to3to3 {
+    grid-template-columns: 2fr 3fr 3fr;
+}
+
+.g2to1 .text-left{
+    margin-right: 40px;
 }
 
 .img-flex{
@@ -374,17 +388,14 @@ h3{
     column-gap: 5px;
     margin-bottom: 5px;
 }
-
 .img-flex img {
     width: auto; 
     object-fit: cover;
     display: block;
 }
-
 .hi300 img{
     height: 300px;
 }
-
 .hi250 img{
     height: 250px;
 }
@@ -603,7 +614,7 @@ span{
 
 @media only screen and (max-width:1205px) {
     .content-left{
-        display: none;
+        display: g;
     } 
 }
 
