@@ -272,6 +272,9 @@ main{
 
 .content-text{
     margin-bottom: 10px;
+}
+
+.lower{
     text-transform: lowercase;
 }
 
